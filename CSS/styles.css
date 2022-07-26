@@ -47,6 +47,11 @@ body {
   background-color: var(--primary-background);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*=============HEADER==============*/
 
 .menu-link {
@@ -66,15 +71,21 @@ body {
   color: var(--accent-color);
 }
 
+.header-menu-contact:not(:last-child) {
+  margin-right: 50px;
+}
+
 /*=============/HEADER===========*/
 
 /*================HERO===========*/
 
 .hero {
+  padding: 200px 0;
   background-color: var(--secondary-background);
 }
 
 .main-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -83,25 +94,23 @@ body {
   text-transform: uppercase;
   color: var(--tertary-text-color);
   margin-bottom: 30px;
-  padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
 }
 
 .modal-btn {
+  border: none;
   min-width: 160px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
-  margin-bottom: 30px;
   line-height: 1.88;
   display: flex;
   align-items: center;
@@ -109,6 +118,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--tertary-text-color);
   background-color: var(--accent-color);
+  border-radius: 6px;
 }
 
 /*.button {
@@ -129,11 +139,6 @@ body {
 /*===============COMPONENTS=============*/
 
 /*============header=========*/
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .container {
   width: 1200px;
@@ -192,8 +197,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-left: auto;
-  margin-right: 50px;
+  /*margin-left: auto;
+  margin-right: 50px;*/
 }
 
 .contact-mail:hover,
@@ -227,16 +232,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .list-qualities {
   display: flex;
   align-items: center;
   gap: 30px;
-}
-
-.quality-name:not(:last-child) {
-  margin-right: 30px;
 }
 
 .quality-name {
@@ -250,6 +252,10 @@ body {
 }
 
 /*===========our work=======*/
+
+.our-work {
+  padding-top: 0;
+}
 
 .section-title {
   font-size: 36px;
@@ -309,30 +315,18 @@ body {
    height: 252px; 
 }*/
 
-.page-footer .footer-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  padding-bottom: 60px;
-}
-
-.menu-contact {
+.page-footer {
   display: flex;
 }
 
-.menu-contact:not(:last-child) {
+.footer-menu-contact:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .footer-logo {
-  padding-top: 60px;
-  padding-right: 1240px;
+  margin-right: 0;
   margin-bottom: 20px;
+  display: block;
 }
 
 .address {
@@ -406,17 +400,13 @@ body {
 
 /*===========PORTFOLIO===============*/
 
-.list-works {
-  padding: 94px 215px;
-}
-
 .button-list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .button-list .button-filter:not(:last-child) {
@@ -428,6 +418,7 @@ body {
 }
 
 .button-filter {
+  border: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -435,6 +426,7 @@ body {
   text-align: center;
   cursor: pointer;
   color: var(--primary-text-color);
+  border-radius: 4px;
 }
 
 .button-filter:hover,
@@ -449,7 +441,7 @@ body {
 }
 
 .text-part {
-  margin-top: 20px;
+  padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -467,13 +459,10 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 
 .type-of-work {
-  margin-top: 4px;
-  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
