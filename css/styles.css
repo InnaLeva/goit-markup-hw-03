@@ -40,6 +40,7 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 } 
 
 .header-wrap {
@@ -48,6 +49,7 @@ img {
 
 .header-nav {
     display: flex;
+    align-items: center;
     
 }
 
@@ -79,6 +81,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .header-menu-list .header-menu-link:hover,
@@ -119,14 +122,11 @@ color: #434455;
 
 
 .hero-section {
-     
-    padding-bottom: 120px;
+     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
-.hero-wrap {
-  background: #2e2f42; 
-  padding: 188px 472px;  
-}
 
 .hero-title {
     font-weight: 700;
@@ -142,6 +142,8 @@ color: #434455;
 }
 
 .hero-button {
+    min-width: 169px;
+    height: 56px;
     background: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
@@ -149,6 +151,7 @@ color: #434455;
     letter-spacing: 0.04em;
     color: #fff;
     border-color: transparent;
+    border: none;
     border-radius: 4px;
     padding: 16px 32px;
     display: block;
@@ -162,9 +165,9 @@ color: #434455;
 
 /*===============about company==========*/
 
-.features-wrap {
-   
-    padding-bottom: 120px;
+.features {
+   padding-top: 120px;
+    padding-bottom: 120px; 
 }
 
 .visually-hidden {
@@ -219,6 +222,7 @@ color: #434455;
 
 }
 
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -227,8 +231,7 @@ color: #434455;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 /*==========================*/
 
@@ -236,16 +239,17 @@ color: #434455;
 
 .section-team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 
 .seaction-team-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .seaction-team-list > .section-team-item {
-    background-color: #fff;;
+    background-color: #fff;
    width: calc((100% - 72px) / 4);
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     
@@ -280,11 +284,23 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 /*=============portfolio=============*/
 
+.section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .section-portfolio-list {
     background: #fff;
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+}
+
+.portfolio-item-wrap {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .portfolio-item {
@@ -297,9 +313,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-top: 32px;
-    margin-bottom: 8px;
-    padding-left: 16px;
+    
 }
 
 .section-portfolio-text {
@@ -307,22 +321,19 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-left: 16px;
-    padding-bottom: 32px;
+   
 }
 
 /* ===============footer============ */
 
 .footer {
     background: #2e2f42;
+    padding: 100px 0;
 }
 
-.footer-wrap {
-    
-    padding: 100px 1020px 100px 156px;
-}
 
 .footer-logo {
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -330,6 +341,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-bottom: 16px;
    
 }
 
@@ -338,11 +350,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 }
 
 .footer-text {
+    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 16px;
+
 }
 
 /*============================ */
