@@ -38,17 +38,18 @@ img {
 /* ------------------HEADER------------------- */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+   
     border-bottom: 1px solid #e7e9fc;
 } 
 
 .header-wrap {
     display: flex;
+    align-items: center;
 }
 
 .header-nav {
     display: flex;
+    flex-grow: 1;
     align-items: center;
     
 }
@@ -62,7 +63,6 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
-    padding-left: 156px;
 }
 
 .header-logo .header-logo-studio {
@@ -72,7 +72,7 @@ img {
 .header-menu-list {
     display: flex;
     gap: 40px;
-    margin-right: 332px;
+    margin-left: 76px;
 }
 
 .header-menu-link {
@@ -98,7 +98,6 @@ img {
 .address-list {
     display: flex;
     gap: 40px;
-    padding-right: 156px;
 }
 
 .address-link {
@@ -215,7 +214,7 @@ color: #434455;
 /*==========GENERAL==========*/
 
 .container {
-    width: 1470px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -248,9 +247,12 @@ color: #434455;
     gap: 24px;
 }
 
+.seaction-team-list {
+    width: calc((100% - 72px) / 4);
+}
+
 .seaction-team-list > .section-team-item {
     background-color: #fff;
-   width: calc((100% - 72px) / 4);
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     
     border-radius: 0 0 4px 4px;
@@ -313,6 +315,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
     
 }
 
