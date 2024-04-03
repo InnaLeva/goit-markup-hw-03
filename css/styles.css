@@ -191,7 +191,7 @@ color: #434455;
 }
 
 .features-item {
-    width: calc((100% - 3 * 24px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
     margin-right: 0;
 }
 
@@ -248,7 +248,7 @@ color: #434455;
     gap: 24px;
 }
 
-.seaction-team-list {
+.seaction-team-item {
     width: calc((100% - 72px) / 4);
 }
 
