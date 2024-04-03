@@ -184,15 +184,15 @@ color: #434455;
 }
 
 .features-list {
-    padding-right: 156px;
-    padding-left: 156px;
     display: flex;
     gap: 24px;
-}
+   margin: 0;
+   padding-left: 0;
+}  
+
 
 .features-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
-    margin-right: 0;
 }
 
 .features-list-title {
